@@ -1,0 +1,45 @@
+{
+  "name": "cacs-framework",
+  "namespace": "CACS",
+  "format": "1",
+  "version": "1.0.1",
+  "compatVersion": "1.0.0",
+  "creator": "cacs",
+  "summary": "Short summary",
+  "detailedDescription": "Long description of package",
+  "type": "code",
+  "signatures": [
+    {
+      "name": "cacs",
+      "uuid": "685b14ad-a607-4708-9dda-a784edff6a6f",
+      "created": "2016-01-22T05:38:56Z",
+      "algorithm": "SHA1withRSA",
+      "nonce": "Sw826me0QiY\u003d",
+      "signature": "Yv6LZsgDqP8I5KYqYt0AA42hFt7PBgtE+3hubSfP4ACheDLkIibwFzNWuInhe0bqzVqjag7Jb53AMqDJk33oK+n+Wa5lJDNWE4UecVVLs7+UOu1Dj3HPJhbJORUewJ0yUX09YGZyqOF+cME5S8blHJllpzCZFBH1kv8NfvVgv1UDA0J/XpPAOXdlvU2O/DjjhKGEtyg2q2lS0kU7S332pt4OmLoo5AdnKrgbZTSCKw4HsOuhfN39UNgpgIgHv1hqpZ1DJdBsorNgWxhGXWwDaN0UBfeocTLaThjzqMiPJlfvIOhFcxRsk6PgyIk8mVQZ+kl9eheUqawwGvabt9lZMQ\u003d\u003d"
+    }
+  ],
+  "slicer": {
+    "js": [
+      {
+        "path": "${package.dir}/sass/example/custom.js",
+        "isWidgetManifest": true
+      }
+    ]
+  },
+  "toolkit": "${args.toolkit}",
+  "output": "${package.dir}/build",
+  "sass": {
+    "namespace": "framework",
+    "etc": "${package.dir}/sass/etc/all.scss,${package.dir}/${toolkit.name}/sass/etc/all.scss",
+    "var": "${package.dir}/sass/var,${package.dir}/${toolkit.name}/sass/var",
+    "src": "${package.dir}/sass/src,${package.dir}/${toolkit.name}/sass/src"
+  },
+  "classpath": "${package.dir}/src,${package.dir}/${toolkit.name}/src",
+  "overrides": "${package.dir}/overrides,${package.dir}/${toolkit.name}/overrides",
+  "example": {
+    "path": [
+      "${package.dir}/examples"
+    ]
+  },
+  "framework": "ext"
+}
